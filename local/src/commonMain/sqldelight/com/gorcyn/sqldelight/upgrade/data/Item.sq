@@ -1,0 +1,11 @@
+CREATE TABLE item (
+  id TEXT NOT NULL PRIMARY KEY,
+  name TEXT,
+  value TEXT
+);
+
+upsert:
+INSERT OR REPLACE INTO item VALUES ?;
+
+selectById:
+SELECT * FROM item WHERE id = ?;
