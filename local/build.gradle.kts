@@ -63,7 +63,7 @@ kotlin {
         sourceSets["iosMain"].dependencies {
             implementation("org.jetbrains.kotlin:kotlin-stdlib")
 
-            implementation("com.squareup.sqldelight:ios-driver:${extra["sqldelight_version"]}")
+            implementation("com.squareup.sqldelight:native-driver:${extra["sqldelight_version"]}")
         }
 
         sourceSets["iosTest"].dependencies {
